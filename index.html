@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Game of Life</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="landingpage.html">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Original Version</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="2nd.html">Other Version</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id='canvas'></div>
+  <div id="control">
+    <button id='button' class="button" class="col-sm-4">Reset Button</button>
+    <button id='button' class="stop" class="col-sm-4">Stop</button>
+    <button id='button' class="Start" class="col-sm-4">Start</button>
+  </div>
+
+  <div id="speed">
+    <button id='button' class="Slow" class="col-sm-4">Slow</button>
+    <button id='button' class="middle" class="col-sm-4">Middle</button>
+    <button id='button' class="fast" class="col-sm-4">fast</button>
+  </div>
+
+  <div id="pattern">
+    <button id='button' class="Small" class="col-sm-4">Small Canva</button>
+    <button id='button' class="mid" class="col-sm-4">Middle Canva</button>
+    <button id='button' class="Large" class="col-sm-4">Large Canva</button>
+  </div>
+
+  <form name = "rules", id = "rules">
+    Neighbours<input type="numbers" id="rules" class="nei" name = "nei"/>
+    Framerate<input type="numbers" id="rules" class="fps" name = "fps"/>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
